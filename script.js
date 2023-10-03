@@ -8,7 +8,7 @@ body.innerHTML = `
 <header>
     <div class="content">
         <button class = "menuSubmit"><i class="ri-menu-line"></i></button>
-        <input type="text" placeholder="Enter the city names" required id="inputcity">
+        <input style="input" type="text" placeholder="Enter the city names" required id="inputcity">
         <button class = "btnSubmit"><i class="ri-search-line"></i></button>
         <button class = "resetisi"><i class="ri-loop-lefzt-line"></i></button>
     </div>
