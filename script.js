@@ -23,9 +23,6 @@ body.innerHTML = `
  
 `;  
 
-
-
-
 // bagian search
 const input = document.querySelector('#inputcity')
 const isi = document.querySelector('.isi')
@@ -33,13 +30,7 @@ const btnSearch = document.querySelector('.btnSubmit');
 btnSearch.onclick = () => {
     fetch(`${wheatherApi}&q=${input.value}`)
     .then(res => res.json())
-    .then(data => {
-        // let hari;
-        // if(data.current.is_day === 1){
-        //     hari = 'Afternoon'
-        // }else{
-        //     hari = 'Evening'
-        // }
+    .then(data => { 
         console.log(data);
         isi.innerHTML = `
         <div class = 'date'>
@@ -184,12 +175,5 @@ btnSidebar.addEventListener('click', () => {
     sideBar.style.left = "0";
   }
 });
-
-
-
-
-   
-
- 
 
 
