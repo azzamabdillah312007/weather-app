@@ -141,6 +141,8 @@ btnSearch.addEventListener('click' , ()=>{
                    <img src="https://${data.forecast.forecastday[1].day.condition.icon}" alt="">
                 </div>
                 <span>${data.forecast.forecastday[0].day.maxtemp_c}<i class="ri-celsius-fill"></i></span>
+                <span>${data.forecast.forecastday[0].day.maxtemp_f}<i class="ri-fahrenheit-line"></i></span>
+
             </div>
 
             <div class ="hari besok">
@@ -149,6 +151,7 @@ btnSearch.addEventListener('click' , ()=>{
                    <img src="https://${data.forecast.forecastday[2].day.condition.icon}" alt="">
                 </div>
                 <span>${data.forecast.forecastday[1].day.maxtemp_c}<i class="ri-celsius-fill"></i></span>
+                <span>${data.forecast.forecastday[1].day.maxtemp_f}<i class="ri-fahrenheit-line"></i></span>
             </div>
         </div>
     </div>
