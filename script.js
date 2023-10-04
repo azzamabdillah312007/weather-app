@@ -11,7 +11,6 @@ body.innerHTML = `
         <input style="input" type="text" placeholder="Enter the city names" id="inputcity" required>
         <button class = "btnSubmit"><i class="ri-search-line"></i></button>
         <button class = "btnreset" onclick="reset()"><i class="ri-refresh-line"></i></button>
-        <button class = "btnreset" onclick="reset()"><i class="ri-refresh-line"></i></button>
     </div>
 </header>
 <div id="sidebar">
@@ -21,15 +20,6 @@ body.innerHTML = `
     </ul>
 </div>
 
-<div class ="welcome">
-    <div class ="judul">
-        <h1>Hey</h1>
-    </div>
-    <div class = "isi">
-         <span>Please fill in the column above with the name of the city where you live to find out the weather forecast</span>
-    </div>
-
-</div>
 
 <div class = 'isi semua'></div>
  
@@ -37,16 +27,11 @@ body.innerHTML = `
 // bagian reset 
 const btnreset = document.querySelector(".btnreset")
 
-
-function reset() {
-  location.reload()
-}
 function reset() {
   location.reload()
 }
 
 // bagian search
-const welcome = document.querySelector('.welcome')
 const isi = document.querySelector('.isi');
 const input = document.querySelector('#inputcity');
 const btnSearch = document.querySelector('.btnSubmit');
@@ -54,8 +39,7 @@ btnSearch.addEventListener('click' , ()=>{
   fetch(`${wheatherApi}&q=${input.value}`)
   .then(res => res.json())
   .then(data => { 
-    console.log(data);
-    welcome.remove()
+    // welcome.remove()
     isi.innerHTML = `
     <div class = 'date'>
         <div class = 'city'> 
@@ -83,30 +67,13 @@ btnSearch.addEventListener('click' , ()=>{
             <i class="ri-moon-cloudy-fill"></i>
             <p>${data.forecast.forecastday[0].astro.moonset}</p>
           </div>
-          <div class ="box moonset">
-            <span>moonset</span>
-            <i class="ri-moon-cloudy-fill"></i>
-            <p>${data.forecast.forecastday[0].astro.moonset}</p>
-          </div>
 
           <div class ="box sunrise">
             <span>sunrise</span>
             <i class="ri-sun-cloudy-fill"></i>
             <p>${data.forecast.forecastday[0].astro.sunrise}</p>
           </div>
-          <div class ="box sunrise">
-            <span>sunrise</span>
-            <i class="ri-sun-cloudy-fill"></i>
-            <p>${data.forecast.forecastday[0].astro.sunrise}</p>
-          </div>
 
-          <div class ="box sunset">
-            <span>sunset</span>
-            <i class="ri-sun-cloudy-fill"></i>
-            <p>${data.forecast.forecastday[0].astro.sunset}</p>
-          </div>
-        </div>
-     </div>
           <div class ="box sunset">
             <span>sunset</span>
             <i class="ri-sun-cloudy-fill"></i>
@@ -177,24 +144,8 @@ btnSearch.addEventListener('click' , ()=>{
             </div>
         </div>
     </div>
-            <div class ="hari besok">
-                <span>${data.forecast.forecastday[2].date}</span>
-                <div class = "maxtemp">
-                   <img src="https://${data.forecast.forecastday[2].day.condition.icon}" alt="">
-                </div>
-                <span>${data.forecast.forecastday[1].day.maxtemp_c}<i class="ri-celsius-fill"></i></span>
-                <span>${data.forecast.forecastday[1].day.maxtemp_f}<i class="ri-fahrenheit-line"></i></span>
-            </div>
-        </div>
-    </div>
 
 
-     <div class ="end">
-        <p>Last update : ${data.current.last_updated}</p>
-     </div>
-    
-})
-})
      <div class ="end">
         <p>Last update : ${data.current.last_updated}</p>
      </div>
