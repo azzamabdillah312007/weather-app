@@ -43,7 +43,6 @@
       font-size: 20px;
       cursor: pointer;
       padding: 15px;
-      
     }
     #sidebar{
       position: fixed;
@@ -174,20 +173,28 @@
       color: white;
     }
     .benner .hari{
-      width: 100px;
+      border: 1xp solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      height: max-content;
       background-color: #7091f58a;
       padding: 15px;
       border-radius: 5px;
-      margin: auto;
+      margin: 10px;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
+    .benner .maxtemp{
+      width: max-content;
+    }
+    .benner .maxtemp img{
+      width: 30px;
+    }
     .benner .hari span{
-      font-size: 13px;
+      font-size: 15px;
       color: white;
       font-family: 'Nunito', sans-serif;
-    }
-    .benner .hari h2{
-      color: white;
     }
     .benner .hari p{
       font-size: 11px;
@@ -195,7 +202,6 @@
       font-family: 'Roboto', sans-serif;
     }
     .benner .afterTomorrow{
-      display: flex;
       margin-top: 11px;
       text-align: center;
     }
@@ -203,14 +209,6 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    /* bagian after day */
-
-    .benner .afterday{
-      text-align: center;
-      padding: 7px;
-      border: 1px solid;
-    }
-       
     /* bagian akhir last update */
 
         
@@ -225,6 +223,3 @@
     }
   
 } 
-
-
-
