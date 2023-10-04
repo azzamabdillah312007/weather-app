@@ -1,10 +1,10 @@
 
 @media(max-width:768px){
-  *{
-    padding: 0;
-    margin: 0;
-  }
-  body{
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body{
       background-image: url(download\ \(2\).jpeg);
       background-size: cover;
     }
@@ -15,7 +15,6 @@
       justify-content: space-around;
       font-family: 'Inclusive Sans', sans-serif;
       background-color: #ffffff5b;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
     header .content h2{
       font-size: 20px;
@@ -24,19 +23,16 @@
       width: max-content;
       display: flex;
       align-items: center;
-      gap: 10px;
     }
     header .content input{
-      padding: 3px;
+      padding-left:15px;
       width: 170px;
       height: 30px;
       border: none;
       border-radius: 5px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     .content button{
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-      background-color: #7091f58a;
+      background-color: transparent;
       border: none;
       border-radius: 5px;
       padding: 3px;
@@ -45,7 +41,7 @@
       color: white;
       font-size: 20px;
       cursor: pointer;
-      
+      padding: 15px;
     }
     #sidebar{
       position: fixed;
@@ -73,6 +69,28 @@
     #sidebar ul li:hover{
         background-color: #9a002c;
     }
+
+    /* bagian pembuka */
+
+    /* .welcome{
+      border: 1px solid;
+    } */
+    .welcome .judul{
+      padding: 10px;
+      border: 1px springgreen;
+      text-align: center;
+      color: white;
+    }
+    .welcome .judul h1{
+      font-family: 'Montserrat', sans-serif;
+    }
+    .welcome .isi span{
+      font-family: 'Roboto Slab', serif;
+      color: white;
+    }
+
+
+    /* bagian isi */
     .isi .date{
       color: white;
       display: flex;
@@ -87,7 +105,8 @@
     .date p{
       font-size: 24px;
       top: -10px;
-      color: black;
+      color: #517bf8;
+      font-weight: 600;
     }
 
     /* bagian benner */
@@ -109,7 +128,7 @@
       color: white;
     }
     .benner .text i{
-      color: black;
+      color: white;
     }
     .benner .fill{
       margin-top: 13px;
@@ -122,11 +141,15 @@
       font-family: 'Nunito', sans-serif;
     }
     .benner .fill p{
+      color: white;
       font-size: 10px;
       font-family: 'Nunito', sans-serif;
     }
     .benner .fill .box{
       text-align: center;
+    }
+    .benner .fill i{
+      color: white;
     }
 
     /* bagian jam */
@@ -147,12 +170,15 @@
       font-family: 'Nunito', sans-serif;
     }
     .benner .hour p{
+      color: white;
       font-size: 10px;
       font-family: 'Nunito', sans-serif;
     }
+    .benner .hour i{
+      color: white;
+    }
 
     /* bagian after day */
-
     .benner .nextDay{
       display: flex;
       align-items: center;
@@ -164,16 +190,30 @@
       color: white;
       font-family: 'Nunito', sans-serif;
     }
+    .benner .nextDay i{
+      color: white;
+    }
     .benner .hari{
-      width: 100px;
+      border: 1xp solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 270px;
+      height: max-content;
       background-color: #7091f58a;
-      padding: 5px;
+      padding: 15px;
       border-radius: 5px;
-      margin: auto;
+      margin: 10px;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     }
+    .benner .maxtemp{
+      width: max-content;
+    }
+    .benner .maxtemp img{
+      width: 30px;
+    }
     .benner .hari span{
-      font-size: 13px;
+      font-size: 15px;
       color: white;
       font-family: 'Nunito', sans-serif;
     }
@@ -183,7 +223,6 @@
       font-family: 'Roboto', sans-serif;
     }
     .benner .afterTomorrow{
-      display: flex;
       margin-top: 11px;
       text-align: center;
     }
@@ -191,14 +230,6 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    /* bagian after day */
-
-    .benner .afterday{
-      text-align: center;
-      padding: 7px;
-      border: 1px solid;
-    }
-       
     /* bagian akhir last update */
 
         
