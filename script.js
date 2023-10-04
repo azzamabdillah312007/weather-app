@@ -36,8 +36,7 @@ body.innerHTML = `
 `;  
 // bagian reset 
 const btnreset = document.querySelector(".btnreset")
-// bagian reset 
-const btnreset = document.querySelector(".btnreset")
+
 
 function reset() {
   location.reload()
@@ -193,7 +192,7 @@ btnSearch.addEventListener('click' , ()=>{
      <div class ="end">
         <p>Last update : ${data.current.last_updated}</p>
      </div>
-    `
+    
 })
 })
      <div class ="end">
